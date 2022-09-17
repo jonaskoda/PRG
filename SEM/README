@@ -1,0 +1,15 @@
+README
+
+The program is around 90% similar with the mandatory minimal working SEM. Therefore keyboard shortcuts etc are as in the SEM assignment. Only difference is the feature for changing an image size and changing a c constant.
+
+
+'t' = prepare for changing the image size, then press '+' or '-'
+'u' = prepare for changing the c constant --||--
+'+'
+'-' = these can be pressed more than once for setting up the desired change
+      which will be displayed in terminal
+'d' = done, apply the changes to the image or the c constant
+
+Before starting a new computation press the 's' button for setting up parameters for Nucleo. In case of image size change, the window will close and the reopen in the new size. In both cases the computation starts from the chunk 0.
+
+ 

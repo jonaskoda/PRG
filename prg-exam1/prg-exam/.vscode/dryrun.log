@@ -1,0 +1,10 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/jonas/Documents/PRG/prg-exam2/prg-exam/prg-exam'
+cc -c xwin_sdl.c -O2 -std=c99 -pedantic -Wall -I/usr/include/SDL2 -D_REENTRANT -I/home/jonas/include  -o xwin_sdl.o
+cc -c exam_utils.c -O2 -std=c99 -pedantic -Wall -I/usr/include/SDL2 -D_REENTRANT -I/home/jonas/include  -o exam_utils.o
+cc -c prg-exam.c -O2 -std=c99 -pedantic -Wall -I/usr/include/SDL2 -D_REENTRANT -I/home/jonas/include  -o prg-exam.o
+ 
+cc -c save_jpeg.c -O2 -std=c99 -pedantic -Wall -I/usr/include/SDL2 -D_REENTRANT -I/home/jonas/include  -o save_jpeg.o
+cc xwin_sdl.o exam_utils.o prg-exam.o save_jpeg.o -lSDL2 -lSDL2_image -ljpeg -L/home/jonas/lib -o prg-exam
+make: Leaving directory '/home/jonas/Documents/PRG/prg-exam2/prg-exam/prg-exam'
+ 

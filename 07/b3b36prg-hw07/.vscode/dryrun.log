@@ -1,0 +1,6 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/jonas/Documents/PRG/07/b3b36prg-hw07'
+cc -c -Wall -Werror -std=c99 -g queue.c -o queue.o
+cc -Wall -Werror -std=c99 -g hw07-testopt-int.c queue.o -o hw07-testopt-int
+make: Leaving directory '/home/jonas/Documents/PRG/07/b3b36prg-hw07'
+ 

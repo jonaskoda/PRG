@@ -1,0 +1,20 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/jonas/Documents/PRG/SEM'
+ 
+cc -c -Wall -Werror -std=gnu99 -g -I/usr/include/SDL2 -D_REENTRANT xwin_sdl.c -o xwin_sdl.o
+ 
+cc -c -Wall -Werror -std=gnu99 -g -I/usr/include/SDL2 -D_REENTRANT event_queue.c -o event_queue.o
+ 
+cc -c -Wall -Werror -std=gnu99 -g -I/usr/include/SDL2 -D_REENTRANT prg_serial_nonblock.c -o prg_serial_nonblock.o
+ 
+cc -c -Wall -Werror -std=gnu99 -g -I/usr/include/SDL2 -D_REENTRANT gui.c -o gui.o
+ 
+cc -c -Wall -Werror -std=gnu99 -g -I/usr/include/SDL2 -D_REENTRANT messages.c -o messages.o
+cc -c -Wall -Werror -std=gnu99 -g -I/usr/include/SDL2 -D_REENTRANT computation.c -o computation.o
+ 
+cc -c -Wall -Werror -std=gnu99 -g -I/usr/include/SDL2 -D_REENTRANT prgsem-main.c -o prgsem-main.o
+cc -c -Wall -Werror -std=gnu99 -g -I/usr/include/SDL2 -D_REENTRANT utils.c -o utils.o
+ 
+cc xwin_sdl.o event_queue.o prg_serial_nonblock.o gui.o messages.o computation.o prgsem-main.o utils.o -pthread -lSDL2 -lSDL2_image -o prgsem-main
+make: Leaving directory '/home/jonas/Documents/PRG/SEM'
+ 

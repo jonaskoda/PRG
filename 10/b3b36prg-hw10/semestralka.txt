@@ -1,0 +1,32 @@
+/*
+pro semestralku bude hlavne implementace fraktalu
+
+while cyklus
+pracuju se strukturu a pak mit funkci, ktera ze strukturz vztvori bajtz
+keyboard akce - vlakno 
+
+
+
+
+semestralka podobne
+
+kdyz uzivatel da compute, zahaji se vzpicet a  asiznchronne nam prijdou castecne vzsledkz a 
+na konci, kdzy vzpocet skonci, posle se zprava
+nucleo se muze zastavit po vzpocteni jednoho bajtu - nejmensi cast vzpoctu
+
+vsechny udalosti, ktere se konaji -cteni ze ser. portu, z klavesnice, ...
+budu mit nejakou frontu zprav a tam dam push, vzgeneruju si novou strukturu, reknu ji udalost
+tu udalost naplnim payloadem
+kdyz uzivatel neco zmackne, tak si znovu
+nemam tam mutex, cond
+ale hlavne push a pop
+fronta, kdyz zavolam push je tam mutex lock unlock
+kdyz je fronta plna cond variable, tak se plneni zastavi
+
+v semsestralce si obrazek rozchunkuju na tverecky a postupne je pocitam
+
+zastaveni bud v pc abort nebo v nucleu i zmacknuti tlacitko
+
+nenastane situace, ze je message type je spatne 
+
+*/

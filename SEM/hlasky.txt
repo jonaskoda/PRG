@@ -1,0 +1,28 @@
+
+void chunk_one_back(void)
+{
+    comp.cid = comp.cid - 1;
+    comp.cur_y -= comp.chunk_n_im;
+    comp.cur_y = 0;       
+    comp.chunk_re = comp.range_re_min;  // upper left corner - starting position in the real numbers
+    comp.chunk_im = comp.range_im_max;  // upper left corner of img / starting pos
+}
+
+
+    //my_assert(xwin_init(gui.w, gui.h) == 0,  __func__, __LINE__, __FILE__);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

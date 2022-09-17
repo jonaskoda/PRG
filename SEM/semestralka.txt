@@ -1,0 +1,89 @@
+
+pro semestralku bude hlavne implementace fraktalu
+
+while cyklus
+pracuju se strukturu a pak mit funkci, ktera ze strukturz vztvori bajtz
+keyboard akce - vlakno 
+
+
+
+
+semestralka podobne
+
+kdyz uzivatel da compute, zahaji se vzpicet a  asiznchronne nam prijdou castecne vzsledkz a 
+na konci, kdzy vzpocet skonci, posle se zprava
+nucleo se muze zastavit po vzpocteni jednoho bajtu - nejmensi cast vzpoctu
+
+vsechny udalosti, ktere se konaji -cteni ze ser. portu, z klavesnice, ...
+budu mit nejakou frontu zprav a tam dam push, vzgeneruju si novou strukturu, reknu ji udalost
+tu udalost naplnim payloadem
+kdyz uzivatel neco zmackne, tak si znovu
+nemam tam mutex, cond
+ale hlavne push a pop
+fronta, kdyz zavolam push je tam mutex lock unlock
+kdyz je fronta plna cond variable, tak se plneni zastavi
+
+v semsestralce si obrazek rozchunkuju na tverecky a postupne je pocitam
+
+zastaveni bud v pc abort nebo v nucleu i zmacknuti tlacitko
+
+nenastane situace, ze je message type je spatne 
+
+
+vzorecek c posle uzivatel nucleu
+
+z jsou postupne jednotlive body mnoziny aka pixely
+
+rozdleit si treba pro obrayek 320 x 420
+
+rozdelit si to a pocitat do te doby, dokud se to nedostane nad dvojku?
+
+postupne pro jednotliva cisla spoctu rekurzivni vzorec a dostanu Kcko
+0 <= k <- n
+n = 60
+maximalne budeme hledat 60
+kdyz najdeme drivejsi pro ktere neni splnena podminka, tak neco udelame
+
+vzmyslet mame to, jak to budeme delat, jestli budeme delat po radcich nebo sloupcich...
+
+ted nucleo posle 250 vzpoctenych ctverecku
+
+cisla ktera dostaneme si budeme ukladat a strkat do unsigned char *img to je ten obrazek
+
+1 vezmeme Z z komplexni roviny, ze vzorecku?
+
+2. urcime si krok, na kolik ctverecku to rozdelime a budeme pocitat 
+\
+3. pro bod pouzijeme vzorecek z+1 a pricteme c a vypocitame absolutni hodnotu
+kdyz to bude mensi nez 2, tak udelame,... udelame to maximalne 60x
+
+k vypocte nucleo
+
+program bude pocitat v nucleu, ale napsat v pc, aby to slo odladid 
+
+kdyz to k = t ve vyorecku ho dosadim ten s R G b, to uz bude na pc
+
+potrebujeme vytvorit 1D pole a v nem jsou pixely a kazdy pixel je rozdelem na 3 casti Red Green a Blue a musime to do toho pole nejak nastrkat
+
+velikost si alokujeme a postupne je NA SPRAVNE MISTO nejtezsi problem je skladat
+
+pro kazde policko pocitame iteracne a kdyz do sedesadi neprekrocime dva, tak nechame 60? coz je cerna barva 
+
+
+nejprve nucleu poslat cisla treab startup zprava
+a pak pocita a posila zpravy
+
+a pak bude naplnene pole *img, coz pak dokazeme funkci redeaw nejak nakreslit
+
+kdyz chci zoomovat, tak hodnoty, ktere mu davat tak necim podelim, aby spocital mensi plochu
+
+hlavni vymyslet to bude jedine jine, jak nucleu posilat zpravy (jak to rozparsovat, treba po radku nebo ctverecky)
+
+odevzdat s napovedou, co aplikace umi, co dela - POVINNE
+
+kdyz zmacknu 'c' tak vypocet nepobezi na nucleu, ale na pc 
+
+nejprve si udelat cecko, pak 3/4 pujdou strcit do Nuclea a melo by to jestli
+
+
+*/

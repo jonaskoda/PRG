@@ -1,0 +1,5 @@
+make --dry-run --keep-going --print-directory
+make: Entering directory '/home/jonas/Documents/PRG/11/prg_again'
+make: Nothing to be done for 'bin'.
+make: Leaving directory '/home/jonas/Documents/PRG/11/prg_again'
+ 

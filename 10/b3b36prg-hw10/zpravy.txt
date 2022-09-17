@@ -1,0 +1,29 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+fprintf(stderr, "INFO: Abort from Nucleo\r\n");
+
+fprintf(stderr, "WARN: Nucleo sends new data without computing \r\n");
+--------------------------------------------------------------------------
+
+
+
+fprintf(stderr, "WARN: the packet has not been received discard what has been read\n\r");
+
+
+
+---------------------------------------------------
+fprintf(stderr, "DEBUG: Write message: ");
+
+fprintf(stderr, "DEBUG: computing: %d\r\n", computation.computing);
+

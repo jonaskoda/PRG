@@ -1,0 +1,7 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/jonas/Documents/PRG/11/prg_serial_hotovo'
+cc -Wall -Werror -g -std=gnu99  -c prg-lab09-main.c -o prg-lab09-main.o
+cc -Wall -Werror -g -std=gnu99  -c prg_serial.c -o prg_serial.o
+cc prg-lab09-main.o prg_serial.o -lpthread -o lab09-main
+make: Leaving directory '/home/jonas/Documents/PRG/11/prg_serial_hotovo'
+ 

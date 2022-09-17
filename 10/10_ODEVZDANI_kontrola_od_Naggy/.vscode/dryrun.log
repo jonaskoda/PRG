@@ -1,0 +1,10 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/jonas/Documents/PRG/10_ODEVZDANI'
+cc -c -Wall -Werror -std=gnu99 -g event_queue.c -o event_queue.o
+cc -c -Wall -Werror -std=gnu99 -g prg_serial_nonblock.c -o prg_serial_nonblock.o
+cc -c -Wall -Werror -std=gnu99 -g hw10-main.c -o hw10-main.o
+ 
+cc -c -Wall -Werror -std=gnu99 -g messages.c -o messages.o
+cc event_queue.o prg_serial_nonblock.o hw10-main.o messages.o -pthread -o hw10-main
+make: Leaving directory '/home/jonas/Documents/PRG/10_ODEVZDANI'
+ 
